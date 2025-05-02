@@ -7,6 +7,7 @@ let todos = []; // In-memory store
 
 app.use(cors());
 app.use(express.json());
+app.use(express.static('public'));
 
 // Get all todos
 app.get('/api/todos', (req, res) => {
